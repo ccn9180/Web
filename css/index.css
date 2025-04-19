@@ -1,0 +1,166 @@
+body {
+    background-color:#f5e6e8;
+    
+}
+
+nav {
+    background-color: #80433e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    height: 40px;
+    position: fixed;  /* Fix the nav bar at the top */
+    top: 0;           /* Position at the top of the page */
+    left: 0;          /* Ensure it's aligned to the left */
+    width: 100%;      /* Make sure the nav takes the full width */
+    z-index: 1000 
+    
+}
+
+.nav_content {
+    display: flex;  
+    flex: 1;
+    justify-content: center;
+    left: 100px;
+}
+
+.user_content {
+    display: flex;
+    align-items: center;
+}
+
+.user_content img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user_content img:hover{
+    cursor: pointer;
+}
+
+.cart {
+    display: flex;
+}
+
+.cart img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    margin-right: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 35px;
+}
+
+nav ul li {
+    display: flex;
+    margin: 15px;
+}
+
+nav li a {
+    color: #ebcbc3;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: #80433e;
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+.genre-nav {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    overflow:hidden;
+    white-space: nowrap;
+    padding: 10px;
+    height: 50px;
+    background: white;
+    border-bottom: 2px solid #ddd;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+    position: fixed;  /* Fix the genre-nav at the top */
+    top: 55px;        /* Position it just below the main navigation */
+    left: 0;          /* Align to the left side */
+    width: 100%;      /* Ensure it spans the full width */
+    z-index: 999;     /* Ensure it's below the main navigation */
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+
+.genre-nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    overflow-x: auto; 
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+.genre-list::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome/Safari */
+}
+
+
+.genre-nav ul li a {
+    display: flex;
+    padding: 10px 15px;
+    color: rgb(198, 133, 133);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 18px; /* Adjusted for better mobile compatibility */
+    font-weight: bold;
+    border-radius: 8px; /* Slightly rounded edges */
+}
+
+/* Hover effect */
+.genre-nav ul li a:hover {
+    background: #f1c3ca;
+    border-radius: 12px;
+}
+
+
+.nav-left-btn, .nav-right-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #bebaba;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.nav-left-btn {
+    left: 10px;
+}
+
+/* Fix right button to the right */
+.nav-right-btn {
+    right: 30px;
+}
+

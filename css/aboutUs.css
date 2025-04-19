@@ -1,0 +1,153 @@
+.aboutus_container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.aboutus_header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.aboutus_header img {
+    margin-top:100px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.aboutus_header h1 {
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 40px;
+    
+}
+
+.aboutus_container h2 {
+    margin-top: 30px;
+    font-size: 30px;
+    color: #80433e;
+    border-left: 5px solid #80433e;
+    padding-left: 10px;
+}
+
+.aboutus_container p {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.aboutus_container ul {
+    padding-left: 30px;
+    margin-top: 15px;
+}
+
+.aboutus_container li {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
+
+.aboutus_container a {
+    color: #80433e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.aboutus_container a:hover {
+    text-decoration: underline;
+}
+
+
+/*privacy policy*/
+
+.privacy-container {
+    max-width: 900px;
+    margin: 100px auto 50px;
+    padding: 20px;
+    line-height: 1.7;
+    font-size: 16px;
+    color: #333;
+}
+
+.privacy-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #80433e;
+    border-bottom: 2px solid #80433e;
+    padding-bottom: 10px;
+}
+
+.privacy-container h2 {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #80433e;
+}
+
+.privacy-container ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.privacy-container li {
+    margin-bottom: 8px;
+}
+
+.privacy-container a {
+    color: #80433e;
+    text-decoration: none;
+}
+
+.privacy-container a:hover {
+    text-decoration: underline;
+}
+
+
+/*privacy policy*/
+.terms-container {
+    max-width: 900px;
+    margin: 100px auto 50px;
+    padding: 20px;
+    line-height: 1.7;
+    font-size: 16px;
+    color: #333;
+}
+
+.terms-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #80433e;
+    border-bottom: 2px solid #80433e;
+    padding-bottom: 10px;
+}
+
+.terms-container h2 {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #80433e;
+}
+
+.terms-container ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.terms-container li {
+    margin-bottom: 8px;
+}
+
+.terms-container a {
+    color: #80433e;
+    text-decoration: none;
+}
+
+.terms-container a:hover {
+    text-decoration: underline;
+}
+
