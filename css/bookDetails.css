@@ -1,0 +1,166 @@
+/* Book Details Container */
+.book_details {
+    background-color: #f5e6e8;
+    padding: 50px;
+    padding-top: 160px;
+    margin:0;
+    display: flex; /* Enables flexbox */
+    align-items: flex-start; /* Aligns text to start of image */
+    gap: 100px; /* Adds spacing between image and text */
+    max-width:100%; /* Ensures content does not stretch too wide */
+   
+}
+
+/* Book Cover */
+.book-image-container {
+    display: flex;
+    flex-direction: column; /* Stack image and button */
+    align-items: center; /* Center align */
+}
+
+.book_details img {
+    width: 285px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: rgba(62, 62, 70, 0.2) 0px 7px 29px 0px;
+    margin-left:60px;
+    margin-bottom: 30px;
+}
+
+/* Text Container */
+.book_details .text {
+    max-width: 100% ;/* Limits text width */
+}
+
+/* Book Title */
+.book_details h2 {
+  font-size: 35px;
+  
+}
+
+.book_details h1{
+    font-size: 55px;
+    margin: 0;
+}
+
+/* Book Description */
+.book_details p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Categories/Genres */
+.book_details a {
+    background: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    margin-right: 5px;
+}
+
+
+
+.book_details a:hover{
+    transition: 0.3s;
+    background: #ddd;
+    text-decoration: underline;
+}
+
+/* Add to Cart Button */
+.book_details form button {
+    display:flex;
+    width:90%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    background:#8f524c;
+    color: white;
+    margin-left: 45px;
+    margin-bottom:100px;
+    text-align: center;
+    justify-content: center; 
+    padding: 15px;
+}
+
+.book_details form button:hover {
+    background:#80433e;   
+}
+
+
+
+/* Overlay background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Popup box */
+.success-popup {
+    background-color: #f5e6e8;
+    color: #80433e;
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+    animation: scaleFade 0.3s ease-in-out;
+}
+
+
+/* Container for buttons inside popup */
+.popup-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Small space between buttons (reduced from 20px) */
+    align-items: center; /* Center buttons horizontally */
+    margin-top: 20px;
+}
+
+/* Individual buttons */
+.popup-buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #80433e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+/* Remove the left margin since buttons are stacked vertically */
+.popup-buttons .btn + .btn {
+    margin-left: 0; /* No left margin needed for vertical stacking */
+}
+
+/* Hover effect */
+.popup-buttons .btn:hover {
+    background-color: #6a352f; /* Slightly darker on hover */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Scale in animation */
+@keyframes scaleFade {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+
